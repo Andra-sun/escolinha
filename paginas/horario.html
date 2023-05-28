@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horario</title>
+    <link rel="stylesheet" href="css/horario-pc.css" type="text/css" media="(max-height: 730px)" />
+    <link rel="stylesheet" href="css/horario-clr.css" type="text/css" media="(max-width: 1100px)" />
+    <link rel="stylesheet" href="css/sala.css" media="(max-width: 1100px)" />
+    <link rel="stylesheet" href="css/salapc.css" media="(max-height: 730px)" />
+    <link rel="stylesheet" href="css/menu.css" media="(max-width: 1100px)" />
+    <link rel="stylesheet" href="css/menupc.css" media="(max-height: 730px)" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="retangulo1"></h1>
+        <span id="titulo">Horario</span>
+        <div class="estrutura">
+            <h1 id="retangulo2">
+                <ul class="telinha">
+                    <li id="caixa1"></li>
+                    <li id="caixa2"></li>
+                    <li id="caixa3"></li>
+                    <li id="caixa4"></li>
+                    <li id="caixa5"></li>
+                </ul>
+                <ul class="semaninha">
+                    <li id="dia1">Segunda</li>
+                    <li id="dia2">Terça</li>
+                    <li id="dia3">Quarta</li>
+                    <li id="dia4">Quinta</li>
+                    <li id="dia5">Sexta</li>
+                </ul>
+                <div id="sla">
+                    <ul class="days">
+                        <li id="mensagem1a"></li>
+                        <li id="mensagem1b"></li>
+                        <li id="mensagem1c"></li>
+                        <li id="mensagem1d"></li>
+                        <li id="mensagem1e"></li>
+                    </ul>
+                    <ul class="days2">
+                        <li id="mensagem2a"></li>
+                        <li id="mensagem2b"></li>
+                        <li id="mensagem2c"></li>
+                        <li id="mensagem2d"></li>
+                        <li id="mensagem2e"></li>
+                    </ul>
+                </div>
+            </h1>
+        </div>
+
+        <div class="card">
+            <h1 id="menu"></h1>
+            <div class="menu-menu oculta" id="menuMenu">
+                <li><a href="/index.html">Menu</a></li>
+                <li><a href="Agenda.html">atividade</a></li>
+                <li><a href="horario.html">horario</a></li>
+                <li><a href="nota.html">Notas</a></li>
+            </div>
+            <button class="menu-botao" id="menu-but" onclick="alternarMenu()">
+                /
+            </button>
+            <div id="mla"></div>
+
+            <h1 id="sala"></h1>
+            <div class="sala-menu oculta" id="salaMenu">
+                <li onclick="exibir3b()">3ºB</li>
+                <li onclick="exibir3d()">3ºD</li>
+            </div>
+            <button class="sala-botao" id="sala-but" onclick="alternarSala()">
+                Sala
+            </button>
+            <h1 id="materia"></h1>
+            <h1 id="dia"></h1>
+        </div>
+    </div>
+    <script src="js/sala.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

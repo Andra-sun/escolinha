@@ -1,0 +1,85 @@
+.menu-botao {
+  position: absolute;
+  width: 4.3vw;
+  height: 8vh;
+  left: 3vw;
+  top: 5.5vh;
+  color: #fff;
+  cursor: pointer;
+  background: #249068;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1vw;
+  border: none;
+  text-align: center;
+  font-size: 1.4vh;
+  line-height: 2.7vh;
+  z-index: 8;
+}
+.menu-botao:hover {
+  transform: rotate(20deg);
+}
+
+.menu-menu {
+  position: absolute;
+  left: 10vw;
+  top: 5.5vh;
+  padding: 0.5vh 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 2vw;
+  border-radius: 1vw;
+  z-index: 7;
+  display: flex;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.menu-menu.aberto {
+  left: 10vw;
+  transform: translateX(0%);
+}
+
+#menuMenu li {
+  width: 10vw;
+  background-color: #1cbb81;
+  color: #fff;
+  padding: 0.5vh 0;
+  margin: 0.5vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#menuMenu li:hover {
+  background-color: #eee;
+  border-radius: 0.8vw;
+  color: #1cbb81;
+}
+#menu-but:focus + #menuMenu {
+  display: block;
+}
+#menuMenu:hover a {
+  color: #575757;
+}
+#menuMenu:hover a:hover {
+  color: #5cdb95;
+  box-shadow: 0 2px 0 0 currentColor;
+}
+#menuMenu li:hover a {
+  color: purple;
+}
+.menu-menu.oculta {
+  opacity: 0;
+  left: 10vw;
+  transform: translateX(-100%);
+}
+#titulo.aberto {
+  left: 58vw;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.25s ease;
+  z-index: 99999;
+  position: relative;
+}

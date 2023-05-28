@@ -1,0 +1,118 @@
+body {
+    background-color: #173637;;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card {
+    grid-column: 1 / -1;
+    margin: 10px;
+}
+#retangulo1 {
+    position: relative;
+    width: 100%;
+    height: 7vh; /* 60px é aproximadamente 6.5% da altura da tela (926px) */
+    left: 0;
+    top: 0;
+    background: #20CD8D;
+    border-radius: 0.2vw;
+    margin-top: 0;
+}
+#titulo{
+    top: -9vh;
+    position: relative;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9vw; 
+    line-height: 7vh; /* 55px é aproximadamente 5.9% da altura da tela (926px) */
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+.estrutura {
+    position: relative;
+    top: -30px;
+}
+#retangulo2 {
+    position: relative;
+    width: 82vw;
+    height: 70vh;
+    left: 9vw;
+    top: -5vh;
+    background: #20CD8D;
+    border-radius: 1.4vw;
+}
+.telinha {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    top: -75.3vh;
+    left: 33vw;
+    margin: 0;
+}
+.telinha li {
+    width: 40vw;
+    height: 11vh;
+    background: #388367;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2.4vw;
+    z-index: 3;
+    margin: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.semaninha {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    position: relative;
+    top: -138.5vh;
+    left: 2vw;
+    margin: 0;
+}
+.semaninha li {
+    width: 21vw;
+    height: 3.2vh;
+    background: #249068;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1.4vw;
+    margin-top: 1vh;
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 3vh;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dia1{
+    margin-top: 6vw;
+}
+#dia2{
+    margin-top: 21vw;
+}
+#dia3{
+    margin-top: 22vw;
+}
+#dia4{
+    margin-top: 20vw;
+}
+#dia5{
+    margin-top: 20vw;
+}
+

@@ -1,0 +1,71 @@
+body{
+    background: #173637;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 16%;
+}
+.gallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card{
+	position: relative;
+	left: 0px;
+	width: 155px;
+	height: 210px;
+	padding: 8px;
+	background-color: white;
+	border-radius: 8px;
+	transition: 1s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+	font-family: "bicyclette";
+	font-weight: bold;
+	font-size:larger;
+	
+}
+
+.card:nth-child(1){
+	background-color: #015a6b;
+}
+.card:nth-child(2){
+	background-color: #348a5d;
+}
+.card:nth-child(3){
+	background-color: #6b645b;
+}
+.card:nth-child(4){
+	background-color: #96747A;
+}
+.card:nth-child(5){
+	background-color: #ad2c34;
+}
+.card:nth-child(6){
+	background-color: #3b3c5a;
+}
+.card:nth-child(7){
+	background-color: #df9938;
+}
+
+.card:not(:first-child){
+	margin-left: -55px;
+}
+
+.card:hover{
+	transform: translateY(-16px);
+	font-weight: bold;
+	cursor: pointer;
+}
+.card:hover ~ .card{
+	left: 55px;
+}
+.card p {
+	display: none;
+  }
+  
+  .card:hover p {
+	display: flex;
+  }
+  

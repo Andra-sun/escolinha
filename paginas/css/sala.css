@@ -1,0 +1,307 @@
+/* celular */
+.sala-botao {
+  position: absolute;
+  left: 84.5vw; 
+  top: 3vh; 
+  width: 12vw; 
+  height: 3.5vh; 
+  color: #fff;
+  cursor: pointer;
+  background: #249068;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1.4vw;
+  border: none;
+  text-align: center;
+  font-size: 1.4vh;
+  line-height: 2.7vh;
+  z-index: 99;
+}
+.sala-menu {
+  position: absolute;
+  right: -11vw;  /* Alterado para "right" */
+  top: 2vh;
+  padding: 0.5vh 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 3vw;
+  border-radius: 1vw;
+  z-index: 99;
+  display: flex;
+  transform: translateX(100%);  /* Alterado para "translateX(100%)" */
+  transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
+}
+.sala-menu.aberto {
+  right: -11vw;  /* Alterado para "right" */
+  transform: translateX(-100%);  /* Alterado para "translateX(0%)" */
+}
+.sala-menu.oculta {
+  opacity: 0;
+  right: -30vw;
+  transform: translateX(0%);
+  transition: transform 0.7s ease-in-out, opacity 0.5s ease-in-out;
+}
+#salaMenu li {
+  background-color: #1cbb81;
+  color: #fff;
+  padding: 0.3vh 0;
+  margin: 1.5vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  border-bottom: 0.1vh solid #ccc;
+  width: 12vw;
+  height: 2.4vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#salaMenu li:hover {
+  background-color: #eee;
+  border-radius: 0.8vw;
+  color: #1cbb81;
+}
+#sala-but:focus + #salaMenu {
+  display: block;
+}
+#salaMenu:hover a {
+  color: #575757;
+}
+#salaMenu:hover a:hover {
+  color: #5cdb95;
+  box-shadow: 0 2px 0 0 currentColor;
+}
+#salaMenu li:hover a {
+  color: purple;
+}
+
+.days {
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  flex-direction: column;
+  position: relative;
+  left: 33vw;
+  top: -198vh;
+  margin: 0;
+  z-index: 999;
+  margin-top: 1vh;
+} 
+.days2{
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  flex-direction: column;
+  position: relative;
+  left: 33vw;
+  top: -258vh;
+  margin: 0;
+  z-index: 999;
+}
+#mensagem1b{
+  margin-top: 2vh;
+}
+#mensagem1c{
+  margin-top: 2vh;
+}
+#mensagem1d{
+  margin-top: 2vh;
+}
+#mensagem1e{
+  margin-top: 2vh;
+}
+#mensagem2b{
+  margin-top: 2vh;
+}
+#mensagem2c{
+  margin-top: 2vh;
+}
+#mensagem2d{
+  margin-top: 2vh;
+}
+#mensagem2e{
+  margin-top: 2vh;
+}
+.days li,
+.days2 li {
+  width: 40vw;
+  height: 11vh;
+  z-index: 999;
+  margin: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw;
+  line-height: 1.8vh;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+
+/* mensagem1a {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 20.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem1b {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 32.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem1c {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 44.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem1d {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 56.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem1e {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 68.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem1f {
+  left: 78vw;
+  top: 3.3vh;
+  font-size: 3vw;
+  height: 2.7vh;
+  width: 11vw;
+  line-height: 3vh;
+}
+
+mensagem2a {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 20.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw;
+  line-height: 1.8vh;
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem2b {
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    left: 33vw;
+    top: 32.7vh;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 3.2vw; 
+    line-height: 1.8vh; 
+    text-align: center;
+    color: #ffffff;
+    mix-blend-mode: normal;
+}
+mensagem2c {
+    position: absolute;
+    width: 40vw;
+    height: 10vh;
+    left: 33vw;
+    top: 44.7vh;
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 3.2vw; 
+    line-height: 1.8vh; 
+    text-align: center;
+    color: #ffffff;
+    mix-blend-mode: normal;
+}
+mensagem2d {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 56.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem2e {
+  position: absolute;
+  width: 40vw;
+  height: 10vh;
+  left: 33vw;
+  top: 68.7vh;
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 3.2vw; 
+  line-height: 1.8vh; 
+  text-align: center;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+mensagem2f {
+  left: 78vw;
+  top: 3.3vh;
+  font-size: 3vw;
+  height: 2.7vh;
+  width: 11vw;
+  line-height: 3vh;
+} */
