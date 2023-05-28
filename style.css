@@ -62,10 +62,13 @@ body{
 	left: 55px;
 }
 .card p {
-	display: none;
-  }
+	transition: opacity 1s ease;
+	opacity: 0;
+}
   
-  .card:hover p {
+.card:hover p {
 	display: flex;
-  }
+	opacity: 1;
+}
+  
   
